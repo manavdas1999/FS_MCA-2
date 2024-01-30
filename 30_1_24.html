@@ -1,0 +1,76 @@
+<!-- 
+30/1/24
+FS class/lab
+Topic: HTML
+Task:
+1. Create a Student Registration form in html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend><big>Student Registration</big></legend>
+
+        <form action="">
+            <div>
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name here" required>
+            </div>
+            <br>
+            <div>
+                <label for="roll">Roll No:</label>
+                <input type="number" id="roll" name="roll" placeholder="Enter your roll number" required >
+            </div>
+            <br>
+            <div>
+                <label for="telephone">Telephone No:</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="011-2775733" pattern="[0-9]{3}-[0-9]{8}">
+            </div>
+            <br>
+            <div>
+                <label for="mobile">Mobile No:</label>
+                <input type="phone" id="mobile" name="mobile" placeholder="91-9811453963" pattern="[0-9]{2}-[0-9]{10}">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="demo@mail.com">
+            </div>
+            <br>
+            <label for="address">Address:</label>
+            <div>
+                <textarea name="address" id="address" cols="30" rows="3"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="course">Course:</label>
+                <select name="course" id="course">
+                    <option value="BCA" id="course">BCA</option>
+                    <option value="BBA" id="course" selected>BBA</option>
+                    <option value="BSc(CS)" id="course">BSc(CS)</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="course">Type:</label>
+                <input type="radio" name="course" id="Full Time" value="Full Time" checked> <label for="Full Time">Full Time</label>
+                <input type="radio" name="course" id="Part Time" value="Part Time"><label for="Part Time">Part Time</label>
+            </div>
+            <br>
+            <div>
+                <label for="score">Score:</label>
+                <input type="number" name="score" id="score" max="100" min="0" placeholder="0-100" required> %
+            </div>
+            <br>
+            <input type="submit">
+        </form>
+    </fieldset>
+
+</body>
+</html>
