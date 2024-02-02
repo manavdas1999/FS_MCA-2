@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <main>
+        <form action="">
+            <section>
+                <h2>Personal Details</h2>
+                <div id="row1">
+                    <label for="title">Title:</label>
+                    <div id="title_options">
+                        <div>
+                            <label for="title">Mr</label>
+                            <input type="radio" name="title" id="title" value="Mr">
+                        </div>
+                        <div>
+                            <label for="title">Ms</label>
+                            <input type="radio" name="title" id="title" value="Ms">
+                        </div>
+                        <div>
+                            <label for="title">Mrs</label>
+                            <input type="radio" name="title" id="title" value="Mrs">
+                        </div>
+                        <div>
+                            <label for="title">Miss</label>
+                            <input type="radio" name="title" id="title" value="Miss">
+                        </div>
+                        <div>
+                            <label for="title">Other<sub>(specify)</sub></label>
+                            <input type="radio" name="text" id="title" >
+                        </div>
+                    </div>
+                </div>
+
+                <div id="row2">
+                    <label for="family_name">Family Name:</label>
+                    <input type="text" name="family_name" id="family_name">
+                </div>
+
+                <div id="row3">
+                    <label for="first_name">First Name/s:</label>
+                    <input type="text" name="first_name" id="first_name">
+                </div>
+                
+                <div id="row4">
+                    <div>
+                        Are you a student at <span>Tairawhiti Polytechnic</span>?
+                    </div>
+
+                    <div id="studentBackground_row1">
+                        <label for="studentResponse">Yes</label>
+                        <input type="radio" name="studentResponse" id="IsStudentFromInstitute" value="yes">
+
+                        <label for="studentStudyFullTime">Are you - Full time</label>
+                        <input type="radio" name="studentStudyFullTime" id="studentStudyType" value="FullTime">
+
+                        <label for="studentStudyPartTime">Part Time</label>
+                        <input type="radio" name="studentStudyPartTime" id="studentStudyType" value="PartTime">
+
+                        <label for="studentCourseName">Course</label>
+                        <input type="text" name="studentCourseName" id="studentCourseName" >
+
+                    </div>
+
+                    <div id="studentBackground_row2">
+                        <label for="studentResponse">No</label>
+                        <input type="radio" name="studentResponse" id="IsStudentFromInstitute" value="no">
+
+                        <label for="studentBackground">Are you a - School Student</label>
+                        <input type="radio" name="studentBackground" id="studentBackground" value="FullTime">
+
+                        <label for="studentResponsePartTime">Part Time</label>
+                        <input type="radio" name="studentResponsePartTime" id="studentBackground" value="PartTime">
+
+                        <label for="studentResponseCourse">Course</label>
+                        <input type="text" name="studentResponseCourse" id="studentResponseCourse" >
+
+                    </div>
+
+
+
+                </div>
+
+            </section>
+        </form>
+    </main>
+</body>
+</html>
