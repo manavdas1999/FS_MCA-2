@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <h1>Registration Form</h1>
     </header>
     <main>
         <form action="">
-            <section>
-                <h2>Personal Details</h2>
+            <section id="personalDetails">
+                <h2>personal Details</h2>
                 <div id="row1">
                     <label for="title">Title:</label>
-                    <div id="title_options">
+                    <div id="titleOptions">
                         <div>
                             <label for="title">Mr</label>
                             <input type="radio" name="title" id="title" value="Mr">
@@ -34,7 +36,7 @@
                         </div>
                         <div>
                             <label for="title">Other<sub>(specify)</sub></label>
-                            <input type="radio" name="text" id="title" >
+                            <input type="radio" name="text" id="title">
                         </div>
                     </div>
                 </div>
@@ -48,7 +50,7 @@
                     <label for="first_name">First Name/s:</label>
                     <input type="text" name="first_name" id="first_name">
                 </div>
-                
+
                 <div id="row4">
                     <div>
                         Are you a student at <span>Tairawhiti Polytechnic</span>?
@@ -65,7 +67,7 @@
                         <input type="radio" name="studentStudyPartTime" id="studentStudyType" value="PartTime">
 
                         <label for="studentCourseName">Course</label>
-                        <input type="text" name="studentCourseName" id="studentCourseName" >
+                        <input type="text" name="studentCourseName" id="studentCourseName">
 
                     </div>
 
@@ -74,22 +76,128 @@
                         <input type="radio" name="studentResponse" id="IsStudentFromInstitute" value="no">
 
                         <label for="studentBackground">Are you a - School Student</label>
-                        <input type="radio" name="studentBackground" id="studentBackground" value="FullTime">
+                        <input type="radio" name="studentBackground" id="studentBackground" value="school">
 
-                        <label for="studentResponsePartTime">Part Time</label>
-                        <input type="radio" name="studentResponsePartTime" id="studentBackground" value="PartTime">
+                        <label for="studentBackground">Other Tertiary Student</label>
+                        <input type="radio" name="studentBackground" id="studentBackground" value="other">
 
-                        <label for="studentResponseCourse">Course</label>
-                        <input type="text" name="studentResponseCourse" id="studentResponseCourse" >
+                        <label for="studentBackground">General Public</label>
+                        <input type="radio" name="studentBackground" id="studentBackground" value="general">
 
+                        <label for="studentBackground">Polytechnic Staff</label>
+                        <input type="radio" name="studentBackground" id="studentBackground" value="staff">
+
+                        <label for="studentInstituteName">Institute</label>
+                        <input type="text" name="studentInstituteName" id="sstudentInstituteName">
+
+                        <label for="studentDeptName">Department</label>
+                        <input type="text" name="studentDeptName" id="studentDeptName">
+                    </div>
+                </div>
+            </section>
+
+            <section id="addressDetails">
+                <h2>address Details</h2>
+                <div id="homeAddress">
+                    Home Postal Address:
+                    <div>
+                        <label for="homeAddress_street">Street Number and Name:</label>
+                        <input type="text" name="homeAddress_street" id="homeAddress_street">
+                    </div>
+
+                    <div>
+                        <label for="homeAddress_city">City:</label>
+                        <input type="text" name="homeAddress_city" id="homeAddress_city">
+                    </div>
+
+                    <div>
+                        <label for="homeAddress_postcode">Postcode:</label>
+                        <input type="number" name="homeAddress_postcode" id="homeAddress_postcode">
                     </div>
 
 
+                    <div>
+                        <label for="homeAddress_tel">Telephone No:</label>
+                        <input type="tel" name="homeAddress_tel" id="homeAddress_tel_home">
+                        <input type="tel" name="homeAddress_tel" id="homeAddress_tel_work">
+                    </div>
+
+
+                    <div>
+                        <label for="homeAddress_phone">Cell Phone No:</label>
+                        <input type="tel" name="homeAddress_tel" id="homeAddress_tel_home">
+                    </div>
+
+                    <div>
+                        <label for="homeAddress_email">e-mail:</label>
+                        <input type="email" name="homeAddress_email" id="homeAddress_email">
+                    </div>
 
                 </div>
 
+                <div id="termAddress">
+                    Term Postal Address(if different):
+                    <div>
+                        <label for="homeAddress_street">Street Number and Name:</label>
+                        <input type="text" name="homeAddress_street" id="homeAddress_street">
+                    </div>
+
+                    <div>
+                        <label for="homeAddress_city">City:</label>
+                        <input type="text" name="homeAddress_city" id="homeAddress_city">
+                    </div>
+
+                    <div>
+                        <label for="homeAddress_postcode">Postcode:</label>
+                        <input type="number" name="homeAddress_postcode" id="homeAddress_postcode">
+                    </div>
+
+
+                    <div>
+                        <label for="homeAddress_tel">Telephone No:</label>
+                        <input type="tel" name="homeAddress_tel" id="homeAddress_tel_home">
+                        <input type="tel" name="homeAddress_tel" id="homeAddress_tel_work">
+                    </div>
+
+
+                    <div>
+                        <label for="homeAddress_phone">Cell Phone No:</label>
+                        <input type="tel" name="homeAddress_tel" id="homeAddress_tel_home">
+                    </div>
+
+                    <div>
+                        <label for="homeAddress_email">e-mail:</label>
+                        <input type="email" name="homeAddress_email" id="homeAddress_email">
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="declaration">
+                <div>
+                    <h2>declaration</h2>
+                    <span class="big caps">PLEASE READ CAREFULLY BEFORE SIGNING</span>
+                </div>
+                <div class="text-italic">
+                    I apply for a Borrowers Card and agree to return all items borrowed on my card by the due date, to notify changes of address immediately and to pay any changes that are incurred
+                </div>
+
+                <div id="declarationSignature">
+                    <div>
+                        <label for="signature">Signature</label>
+                        <input type="text" name="signature" id="signature">
+                    </div>
+
+                    <div>
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date" >
+                    </div>
+
+                </div>
+                
             </section>
         </form>
     </main>
 </body>
+
 </html>
