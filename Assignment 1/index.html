@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -15,9 +16,9 @@
         <form action="">
             <section id="personalDetails">
                 <h2>personal Details</h2>
-                <div id="row1">
-                    <label for="title">Title:</label>
+                <div id="titleRow">
                     <div id="titleOptions">
+                        <label for="title">Title:</label>
                         <div>
                             <label for="title">Mr</label>
                             <input type="radio" name="title" id="title" value="Mr">
@@ -36,22 +37,27 @@
                         </div>
                         <div>
                             <label for="title">Other<sub>(specify)</sub></label>
-                            <input type="radio" name="text" id="title">
+                            <input type="text" name="title" id="title">
                         </div>
                     </div>
                 </div>
 
-                <div id="row2">
-                    <label for="family_name">Family Name:</label>
-                    <input type="text" name="family_name" id="family_name">
+                <div id="nameRow">
+                    <div>
+                        <label for="family_name">Family Name:</label>
+                        <input type="text" name="family_name" id="family_name">
+                    </div>
+
+                    <div>
+                        <label for="first_name">First Name/s:</label>
+                        <input type="text" name="first_name" id="first_name">
+                    </div>
+
                 </div>
 
-                <div id="row3">
-                    <label for="first_name">First Name/s:</label>
-                    <input type="text" name="first_name" id="first_name">
-                </div>
 
-                <div id="row4">
+
+                <div id="grid-container">
                     <div>
                         Are you a student at <span>Tairawhiti Polytechnic</span>?
                     </div>
